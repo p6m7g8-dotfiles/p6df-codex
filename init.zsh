@@ -30,12 +30,12 @@ p6df::modules::codex::external::brews() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::codex::home::symlink()
+# Function: p6df::modules::codex::home::symlinks()
 #
 #  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
-p6df::modules::codex::home::symlink() {
+p6df::modules::codex::home::symlinks() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-codex/share/codex" "$HOME/.codex"
 
