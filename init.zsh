@@ -21,8 +21,8 @@ p6df::modules::codex::deps() {
 ######################################################################
 p6df::modules::codex::external::brews() {
 
-  p6df::modules::homebrew::cli::brew::install --cask codex
-  p6df::modules::homebrew::cli::brew::install --cask codex-app
+  p6df::core::homebrew::cli::brew::install --cask codex
+  p6df::core::homebrew::cli::brew::install --cask codex-app
 
   p6_return_void
 }
@@ -51,15 +51,15 @@ p6df::modules::codex::home::symlink() {
 ######################################################################
 p6df::modules::codex::aliases::init() {
 
-  p6_alias cx "codex"
-  p6_alias cdxa "codex ask"
-  p6_alias cdxc "codex chat"
-  p6_alias cdxcfg "codex config"
-  p6_alias cdxE "codex exec"
-  p6_alias cdxF "codex fix"
-  p6_alias cdxr "codex review"
-  p6_alias cdxT "codex test"
-  p6_alias cxr "codex resume"
+  p6_alias "co"    "codex"
+  p6_alias "coa"   "codex ask"
+  p6_alias "coc"   "codex chat"
+  p6_alias "cocfg" "codex config"
+  p6_alias "coE"   "codex exec"
+  p6_alias "coF"   "codex fix"
+  p6_alias "corev" "codex review"
+  p6_alias "coT"   "codex test"
+  p6_alias "cor"   "codex resume"
 
   p6_return_void
 }
