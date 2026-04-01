@@ -79,6 +79,6 @@ p6df::modules::codex::aliases::init() {
 ######################################################################
 p6df::modules::codex::profile::mod() {
 
-  p6_return_words 'codex' "$CODEX_HOME"
+  p6_return_words 'codex' '$CODEX_HOME'
 }
 
