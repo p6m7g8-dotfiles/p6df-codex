@@ -15,7 +15,11 @@ p6df::modules::codex::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::codex::aliases::init()
+# Function: p6df::modules::codex::aliases::init(_module, _dir)
+#
+#  Args:
+#	_module -
+#	_dir -
 #
 #>
 ######################################################################
@@ -69,10 +73,10 @@ p6df::modules::codex::external::brews() {
 ######################################################################
 #<
 #
-# Function: words codex $CODEX_HOME = p6df::modules::codex::profile::mod()
+# Function: words codex = p6df::modules::codex::profile::mod()
 #
 #  Returns:
-#	words - codex $CODEX_HOME
+#	words - codex
 #
 #  Environment:	 CODEX_HOME
 #>

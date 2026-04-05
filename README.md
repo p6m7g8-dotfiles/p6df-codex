@@ -41,11 +41,14 @@ TODO: Add a short summary of this module.
 
 ##### p6df-codex/init.zsh
 
-- `p6df::modules::codex::aliases::init()`
+- `p6df::modules::codex::aliases::init(_module, _dir)`
+  - Args:
+    - _module
+    - _dir
 - `p6df::modules::codex::deps()`
 - `p6df::modules::codex::external::brews()`
-- `p6df::modules::codex::home::symlink()`
-- `words codex $CODEX_HOME = p6df::modules::codex::profile::mod()`
+- `p6df::modules::codex::home::symlinks()`
+- `words codex = p6df::modules::codex::profile::mod()`
 
 ## Hierarchy
 
