@@ -15,14 +15,23 @@ p6df::modules::codex::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::codex::external::brews()
+# Function: p6df::modules::codex::aliases::init()
 #
 #>
 ######################################################################
-p6df::modules::codex::external::brews() {
+p6df::modules::codex::aliases::init() {
 
-  p6df::core::homebrew::cli::brew::install --cask codex
-  p6df::core::homebrew::cli::brew::install --cask codex-app
+  local _module="$1"
+  local _dir="$2"
+  p6_alias "co"    "codex"
+  p6_alias "coa"   "codex ask"
+  p6_alias "coc"   "codex chat"
+  p6_alias "cocfg" "codex config"
+  p6_alias "coE"   "codex exec"
+  p6_alias "coF"   "codex fix"
+  p6_alias "corev" "codex review"
+  p6_alias "coT"   "codex test"
+  p6_alias "cor"   "codex resume"
 
   p6_return_void
 }
@@ -45,23 +54,14 @@ p6df::modules::codex::home::symlinks() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::codex::aliases::init()
+# Function: p6df::modules::codex::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::codex::aliases::init() {
+p6df::modules::codex::external::brews() {
 
-  local _module="$1"
-  local _dir="$2"
-  p6_alias "co"    "codex"
-  p6_alias "coa"   "codex ask"
-  p6_alias "coc"   "codex chat"
-  p6_alias "cocfg" "codex config"
-  p6_alias "coE"   "codex exec"
-  p6_alias "coF"   "codex fix"
-  p6_alias "corev" "codex review"
-  p6_alias "coT"   "codex test"
-  p6_alias "cor"   "codex resume"
+  p6df::core::homebrew::cli::brew::install --cask codex
+  p6df::core::homebrew::cli::brew::install --cask codex-app
 
   p6_return_void
 }
