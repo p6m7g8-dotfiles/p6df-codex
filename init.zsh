@@ -65,7 +65,6 @@ p6df::modules::codex::home::symlinks() {
 p6df::modules::codex::external::brews() {
 
   p6df::core::homebrew::cli::brew::install --cask codex
-  p6df::core::homebrew::cli::brew::install --cask codex-app
 
   p6_return_void
 }
